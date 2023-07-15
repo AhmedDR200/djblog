@@ -3,7 +3,7 @@
 <a href="{% url 'blog:post_create' %}">add new post</a>
 <hr>
 
-{% for post in all_posts %}
+{% for post in object_list %}
    
     <h2><a href="{% url 'blog:post_datail' post.id %}">{{ post }}</a></h2>
 
