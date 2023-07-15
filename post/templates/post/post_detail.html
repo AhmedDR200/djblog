@@ -1,1 +1,8 @@
-<h2>thtrjyj</h2>
+<h2>Post detail</h2>
+
+<a href="{% url 'blog:post_edit' post.id %}">edit this post</a>
+<hr>
+
+<h4>{{post}}</h4>
+
+<p>{{post.contant}}</p>

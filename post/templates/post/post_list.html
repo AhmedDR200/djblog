@@ -1,1 +1,10 @@
-<h2>htgdhggn</h2>
+<h2>Blog</h2>
+
+<a href="{% url 'blog:post_create' %}">add new post</a>
+<hr>
+
+{% for post in all_posts %}
+   
+    <h2><a href="{% url 'blog:post_datail' post.id %}">{{ post }}</a></h2>
+
+{% endfor %}
